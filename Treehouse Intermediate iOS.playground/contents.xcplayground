@@ -3,5 +3,6 @@
     <pages>
         <page name='01 - Properties'/>
         <page name='02 - Property Observers'/>
+        <page name='03 - Object Initialization'/>
     </pages>
 </playground>
