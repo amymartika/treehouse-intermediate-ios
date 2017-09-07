@@ -94,7 +94,7 @@ struct Map {
         }
         
         let horizontalDistanceSquared = square(horizontalDistance)
-        let verticalDistanceSquared = square(verticalDistanceSquared)
+        let verticalDistanceSquared = square(verticalDistance)
         
         return sqrt(horizontalDistanceSquared + verticalDistanceSquared)
     }
@@ -126,7 +126,7 @@ class NewtonCalculator: Calculator {
         var newGuess: Double
         
         while true {
-            newGuess = (value/guess + guesss)/2
+            newGuess = (value/guess + guess)/2
             if guess == newGuess {
                 return guess
             }

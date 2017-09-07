@@ -6,5 +6,6 @@
         <page name='03 - Object Initialization'/>
         <page name='04 - Value vs Reference Types'/>
         <page name='05 - Mixed Semantics'/>
+        <page name='06 - Extensions'/>
     </pages>
 </playground>
