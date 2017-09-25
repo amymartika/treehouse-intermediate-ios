@@ -7,5 +7,6 @@
         <page name='04 - Value vs Reference Types'/>
         <page name='05 - Mixed Semantics'/>
         <page name='06 - Extensions'/>
+        <page name='07 - Memory Management'/>
     </pages>
 </playground>
