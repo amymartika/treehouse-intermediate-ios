@@ -8,5 +8,6 @@
         <page name='05 - Mixed Semantics'/>
         <page name='06 - Extensions'/>
         <page name='07 - Memory Management'/>
+        <page name='08 - API Design Guidelines'/>
     </pages>
 </playground>
