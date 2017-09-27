@@ -53,7 +53,37 @@ class NetworkManager {} // too ambigious
  --------------
  Naming Methods
  --------------
+ 
+ - We should always check how functions read at the 
+ use site.
+ - Omit needless information. Use an underscore to
+ omit external names when they aren't necessary.
+ - Include all words needed to avoid ambiguity. 
+ This can be difficult to balance with the rule 
+ above. It comes down to a case-by-case evaluation.
+ - Compensate for weak type information. We
+ precede each weakly-typed paramater with a noun
+ describing its role.
 */
 
+/*
+ ------------
+ Fluent Usage
+ ------------
+ 
+ - Methods and functions should read as grammatical
+ English phrases at the use site.
+*/
 
+// Example #1
 
+func insert(_ element: String, at index: Int) {}
+insert("a", at: 2) // "Insert element at index"
+
+// Example #2
+
+func find(character: String, in range: Range<String.Index>) {}
+let character = "a"
+let range = character.startIndex..<character.endIndex
+
+find(character: character, in: range) // "Find character in range"
