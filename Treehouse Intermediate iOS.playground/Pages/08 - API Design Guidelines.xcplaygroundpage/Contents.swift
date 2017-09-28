@@ -87,3 +87,25 @@ let character = "a"
 let range = character.startIndex..<character.endIndex
 
 find(character: character, in: range) // "Find character in range"
+
+/*
+ -------------------------------------
+ Prepositional vs. Grammatical Phrases
+ -------------------------------------
+*/
+
+func move(toPosition position: Int) {}
+// Include "Position" in external name because "Int" isn't descriptive enough
+
+func moveTo(x: Int, y: Int) {}
+// We're "moving to" both x and y, so we include "to" in the base name
+
+func removeBoxes(havingLength: Int) {}
+
+func dismiss(animated: Bool) {}
+dismiss(animated: false)
+// There isn't really a better way to word this function
+
+import UIKit
+func activate(_ constraints: [NSLayoutConstraint]) {}
+// We're aren't using an external name becuase we want to omit needless words
