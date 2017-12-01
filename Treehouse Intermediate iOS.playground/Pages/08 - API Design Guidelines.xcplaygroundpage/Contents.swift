@@ -109,3 +109,47 @@ dismiss(animated: false)
 import UIKit
 func activate(_ constraints: [NSLayoutConstraint]) {}
 // We're aren't using an external name becuase we want to omit needless words
+
+/*
+ --------------------------
+ Side Effects and Mutations
+ --------------------------
+ 
+ - A method that mutates the current state rather than one that takes
+ an input, performs an operation, and then outputs a value without
+ affecting the current state. Ex: func append(_ newElement: Element)
+ - Methods with side effects should be named using verb phrases.
+ - If the method doesn't haven't any side effects, the method's name
+ should read as a noun. Ex: func distance(to point: Point)
+ 
+ * EXCEPTIONS *
+ - Sometimes a method has a mutating variant and a non-mutating one. 
+ In such cases, we want to keep the naming consistent between the two.
+ - The basis for which part of speech is determined by how the
+ method is best described. If best described using a verb ("sort"),
+ use the verb for the mutating method ("sort"). For the non-mutating 
+ counterpart, we use the -ed or -ing suffix ("sorted"). If best
+ described using a noun ("union"), use the noun form for the non-mutating 
+ method. For the mutating version, add the prefix "form" to the noun
+ ("form union").
+*/
+
+/*
+ -----------
+ Conventions
+ -----------
+ 
+ * BOOLEAN METHODS * 
+ - Want to read as assertions. ex: func isInRange(of point: Point).
+ 
+ * PARAMETERS *
+ - Choose parameter names that serve documentation. Parameter names
+ here refer to what we've been calling the local name. Choice of name
+ for the paramater should clearly document its role in the function.
+ - Use default values where possible to simplify function signatures
+ and make it more readable. In Swift, default arguments are 
+ preferable to the use of method families. 
+ - Method families: It's okay for free functions to use the same
+ name so long as they do the same thing more or less. 
+ ex: "func contains" in both "extension Shape" and "extension Collection."
+*/
