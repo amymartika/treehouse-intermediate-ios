@@ -9,5 +9,6 @@
         <page name='06 - Extensions'/>
         <page name='07 - Memory Management'/>
         <page name='08 - API Design Guidelines'/>
+        <page name='09 - Delegation in iOS'/>
     </pages>
 </playground>
